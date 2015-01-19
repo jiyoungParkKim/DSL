@@ -1,0 +1,42 @@
+grammar fr.istic.m2miage.idm.CSS with org.eclipse.xtext.common.Terminals
+
+generate cSS "http://www.istic.fr/m2miage/idm/CSS"
+
+Style:
+	pollStyle=PollStyle
+	singleQuestionStyle = SingleQuestionStyle
+	multipleQuestionStyle = MultipleQuestionStyle
+	textQuestionStyle = TextQuestionStyle
+;
+
+PollStyle:
+	"PollStyle" name=ID '{' 	
+		"bgColor" ":" color=ColorEnum
+		"borderType" ":" borderType=BorderTypeEnum
+	'}'
+;
+
+SingleQuestionStyle:
+	"SingleQuestionStyle" name=ID '{' 	
+		"bgColor" ":" color=ColorEnum
+		"borderType" ":" borderType=BorderTypeEnum
+	'}'
+;
+
+MultipleQuestionStyle:
+	"MultipleQuestionStyle" name=ID '{' 	
+		"bgColor" ":" color=ColorEnum
+		"borderType" ":" borderType=BorderTypeEnum
+	'}'
+;
+
+TextQuestionStyle:
+	"TextQuestionStyle" name=ID '{' 	
+		"bgColor" ":" color=ColorEnum
+		"borderType" ":" borderType=BorderTypeEnum
+	'}'	
+;
+
+enum ColorEnum: Azure='Azure' | Cyan='Cyan' | LavenderBlush='LavenderBlush' | LightGreen='LightGreen' | PaleTurquoise='PaleTurquoise';
+
+enum BorderTypeEnum: BOX='Box' | NONE='None' | ROUNDEDBOX='RoundedBox' | Dotte='Dotte';

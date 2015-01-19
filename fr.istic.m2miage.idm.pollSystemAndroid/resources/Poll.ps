@@ -1,0 +1,39 @@
+PollSystem PollSystem1 {
+	Poll poll1 {
+		description : "Poll 1" 
+		TextQuestion TQ1 {
+			text "Text Question"
+		}
+		ImageQuestion IQ1 {
+			text "Image Question"
+			imagePath : "Selection_037.png"
+		}
+		SingleChoiceQuestion SCQ1 {
+			text "Single Choice Question"
+			Options {
+				() o1 option : "Option1" value : "Value1"
+				() o2 option : "Option2" value : "Value2"
+				() o3 option : "Option3" value : "Value3"
+			}
+		}
+	}
+	
+	Poll poll2 {
+		description : "Poll 2" 
+		TextQuestion TQ2 {
+			text "Text Question"
+		}
+		ImageQuestion IQ2 {
+			text "Image Question"
+			imagePath : "Selection_126.png"
+		}
+		MultipleChoiceQuestion SCQ2 {
+			text "Multiple Choice Question"
+			Options {
+				[] o4 option : "Option1" value : "Value1"
+				[] o5 option : "Option2" value : "Value2"
+				[] o6 option : "Option3" value : "Value3"
+			}
+		}
+	}
+}

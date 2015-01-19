@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/UIMM/src" modelPluginID="UIMM" modelName="Uimm"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>uimm.ecore</foreignModel>
+  <genPackages prefix="Uimm" basePackage="fr.istic.m2miage.idm" disposableProviderFactory="true"
+      ecorePackage="uimm.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="uimm.ecore#//OptionType">
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//OptionType/Radio"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//OptionType/CheckBox"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="uimm.ecore#//BorderStyle">
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//BorderStyle/Box"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//BorderStyle/None"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//BorderStyle/Round"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="uimm.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//Color/Azure"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//Color/Cyan"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//Color/LavenderBlush"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//Color/LightGreen"/>
+      <genEnumLiterals ecoreEnumLiteral="uimm.ecore#//Color/PaleTurquoise"/>
+    </genEnums>
+    <genClasses ecoreClass="uimm.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Component/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Component/borderStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Component/bgColor"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//ImageComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//ImageComponent/src"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Element/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Element/name"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//TextComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//TextComponent/text"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//ListComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uimm.ecore#//ListComponent/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//ListComponent/type"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//Option">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Option/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Option/value"/>
+    </genClasses>
+    <genClasses ecoreClass="uimm.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uimm.ecore#//Page/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uimm.ecore#//Page/title"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

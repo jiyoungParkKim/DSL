@@ -1,0 +1,20 @@
+PollStyle AzureBox {
+	bgColor : Azure
+	borderType : RoundedBox
+}
+
+SingleQuestionStyle CyanDotte {
+	bgColor : PaleTurquoise
+	borderType : Dotte
+}
+
+MultipleQuestionStyle LavenderBlushRoundedBox {
+	bgColor : LavenderBlush
+	borderType : Dotte
+}
+
+TextQuestionStyle LightGreenBox {
+	bgColor : LightGreen
+	borderType : Dotte
+}
+

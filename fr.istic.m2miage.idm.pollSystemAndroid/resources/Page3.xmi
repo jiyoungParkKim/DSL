@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uimm:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uimm="http://idm.m2miage.istic.fr/uimm" title="ps1">
+  <components name="poll1" description="Poll 1" bgColor="Azure">
+    <components xsi:type="uimm:TextComponent" name="TQ1" borderStyle="Dotte" bgColor="Cyan" text="Text Question"/>
+    <components xsi:type="uimm:ImageComponent" name="IQ1" borderStyle="Dotte" bgColor="Cyan" text="Image Question" src="imagePath"/>
+    <components xsi:type="uimm:ListComponent" name="SCQ1" borderStyle="Dotte" bgColor="Cyan" text="Single Choice Question">
+      <elements xsi:type="uimm:Option" text="Option1" name="o1" value="Value1"/>
+      <elements xsi:type="uimm:Option" text="Option2" name="o2" value="Value2"/>
+      <elements xsi:type="uimm:Option" text="Option3" name="o3" value="Value3"/>
+    </components>
+  </components>
+  <components name="poll2" description="Poll 2" bgColor="Azure">
+    <components xsi:type="uimm:TextComponent" name="TQ2" borderStyle="Dotte" bgColor="Cyan" text="Text Question"/>
+    <components xsi:type="uimm:ImageComponent" name="IQ2" borderStyle="Dotte" bgColor="Cyan" text="Image Question" src="imagePath"/>
+    <components xsi:type="uimm:ListComponent" name="SCQ2" borderStyle="RoundedBox" bgColor="LavenderBlush" text="Multiple Choice Question">
+      <elements xsi:type="uimm:Option" text="Option1" name="o4" type="CheckBox" value="Value1"/>
+      <elements xsi:type="uimm:Option" text="Option2" name="o5" type="CheckBox" value="Value2"/>
+      <elements xsi:type="uimm:Option" text="Option3" name="o6" type="CheckBox" value="Value3"/>
+    </components>
+  </components>
+</uimm:Page>

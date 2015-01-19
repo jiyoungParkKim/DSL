@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/transformation"/>
+	<classpathentry kind="lib" path="/home/jiyoung/workspace/tools/eclipse-dsl-luna2/plugins/org.eclipse.emf.common_2.10.1.v20140901-1043.jar" sourcepath="/home/jiyoung/workspace/tools/eclipse-dsl-luna2/plugins/org.eclipse.emf.common.source_2.10.1.v20140901-1043.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/archive/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/command/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/impl/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/util/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="/UIMM"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

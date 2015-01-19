@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.istic.m2miage.idm.pollSystem/src-gen" editDirectory="/fr.istic.m2miage.idm.pollSystem.edit/src"
+    editorDirectory="/fr.istic.m2miage.idm.pollSystem.editor/src" modelPluginID="fr.istic.m2miage.idm.pollSystem"
+    forceOverwrite="true" modelName="PollSystem" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="fr.istic.m2miage.idm.pollSystem.edit"
+    editorPluginID="fr.istic.m2miage.idm.pollSystem.editor" runtimeVersion="2.10">
+  <genPackages prefix="PollSystem" basePackage="fr.istic.m2miage.idm" disposableProviderFactory="true"
+      fileExtensions="ps" ecorePackage="PollSystem.ecore#/">
+    <genClasses ecoreClass="PollSystem.ecore#//PollSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//PollSystem/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystem.ecore#//PollSystem/polls"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//Poll">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//Poll/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//Poll/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystem.ecore#//Poll/questions"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//Question">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//Question/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//Question/text"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//TextQuestion"/>
+    <genClasses ecoreClass="PollSystem.ecore#//ImageQuestion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//ImageQuestion/imagePath"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//SingleChoiceQuestion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystem.ecore#//SingleChoiceQuestion/options"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//MultipleChoiceQuestion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystem.ecore#//MultipleChoiceQuestion/options"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//QuestionOption">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//QuestionOption/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//QuestionOption/option"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystem.ecore#//QuestionOption/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystem.ecore#//SingleChoiceOption"/>
+    <genClasses ecoreClass="PollSystem.ecore#//MultipleChoiceOption"/>
+  </genPackages>
+</genmodel:GenModel>

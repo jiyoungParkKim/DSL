@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uimm -->
+      <package
+            uri="http://idm.m2miage.istic.fr/uimm"
+            class="fr.istic.m2miage.idm.uimm.UimmPackage"
+            genModel="model/uimm.genmodel"/>
+   </extension>
+
+</plugin>

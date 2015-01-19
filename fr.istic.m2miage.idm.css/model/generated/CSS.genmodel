@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.istic.m2miage.idm.css/src-gen" editDirectory="/fr.istic.m2miage.idm.css.edit/src"
+    editorDirectory="/fr.istic.m2miage.idm.css.editor/src" modelPluginID="fr.istic.m2miage.idm.css"
+    forceOverwrite="true" modelName="CSS" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="fr.istic.m2miage.idm.css.edit"
+    editorPluginID="fr.istic.m2miage.idm.css.editor" runtimeVersion="2.10">
+  <genPackages prefix="CSS" basePackage="fr.istic.m2miage.idm" disposableProviderFactory="true"
+      fileExtensions="css" ecorePackage="CSS.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CSS.ecore#//ColorEnum">
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//ColorEnum/Azure"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//ColorEnum/Cyan"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//ColorEnum/LavenderBlush"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//ColorEnum/LightGreen"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//ColorEnum/PaleTurquoise"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CSS.ecore#//BorderTypeEnum">
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//BorderTypeEnum/BOX"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//BorderTypeEnum/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//BorderTypeEnum/ROUNDEDBOX"/>
+      <genEnumLiterals ecoreEnumLiteral="CSS.ecore#//BorderTypeEnum/Dotte"/>
+    </genEnums>
+    <genClasses ecoreClass="CSS.ecore#//Style">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CSS.ecore#//Style/pollStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CSS.ecore#//Style/singleQuestionStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CSS.ecore#//Style/multipleQuestionStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CSS.ecore#//Style/textQuestionStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="CSS.ecore#//PollStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//PollStyle/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//PollStyle/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//PollStyle/borderType"/>
+    </genClasses>
+    <genClasses ecoreClass="CSS.ecore#//SingleQuestionStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//SingleQuestionStyle/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//SingleQuestionStyle/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//SingleQuestionStyle/borderType"/>
+    </genClasses>
+    <genClasses ecoreClass="CSS.ecore#//MultipleQuestionStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//MultipleQuestionStyle/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//MultipleQuestionStyle/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//MultipleQuestionStyle/borderType"/>
+    </genClasses>
+    <genClasses ecoreClass="CSS.ecore#//TextQuestionStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//TextQuestionStyle/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//TextQuestionStyle/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CSS.ecore#//TextQuestionStyle/borderType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

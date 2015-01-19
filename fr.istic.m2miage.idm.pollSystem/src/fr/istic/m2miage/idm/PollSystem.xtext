@@ -1,0 +1,60 @@
+grammar fr.istic.m2miage.idm.PollSystem with org.eclipse.xtext.common.Terminals
+
+generate pollSystem "http://www.istic.fr/m2miage/idm/PollSystem"
+
+PollSystem:
+	"PollSystem" name=ID '{'
+		polls+=Poll+ 
+	'}'
+;
+
+Poll:
+	"Poll" name=ID '{' 
+		("description" ":" description=STRING)?
+		questions+=Question+
+	'}'
+;
+	
+Question : 
+	TextQuestion | ImageQuestion | SingleChoiceQuestion | MultipleChoiceQuestion;
+
+
+TextQuestion:
+	'TextQuestion' name=ID '{'
+		'text' text=STRING
+	'}';
+	
+ImageQuestion:
+	'ImageQuestion' name=ID '{'
+		'text' text=STRING
+		"imagePath" ":" imagePath=STRING
+	'}';
+
+SingleChoiceQuestion:
+	'SingleChoiceQuestion' name=ID '{'
+		'text' text=STRING
+		"Options" '{'
+			(options+=SingleChoiceOption)+
+		'}'
+	'}';
+	
+
+MultipleChoiceQuestion:
+	'MultipleChoiceQuestion' name=ID '{'
+		'text' text=STRING
+		"Options" '{'
+			(options+=MultipleChoiceOption)+
+		'}'
+	'}';
+
+QuestionOption:
+	SingleChoiceOption | MultipleChoiceOption
+;
+
+SingleChoiceOption :
+	"()" name=ID "option" ":" option=STRING  "value" ":" value=STRING
+;
+
+MultipleChoiceOption:
+	"[]" name=ID "option" ":" option=STRING "value" ":" value=STRING
+;

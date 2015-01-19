@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uimm:ListComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uimm="http://idm.m2miage.istic.fr/uimm" xsi:schemaLocation="http://idm.m2miage.istic.fr/uimm uimm.ecore">
+  <elements xsi:type="uimm:Option" text="Option 1" name="O1" value="1"/>
+  <elements xsi:type="uimm:Option" text="Option 2" name="O2" value="2"/>
+  <elements xsi:type="uimm:Option" text="Option 3" name="O3" value="3"/>
+</uimm:ListComponent>

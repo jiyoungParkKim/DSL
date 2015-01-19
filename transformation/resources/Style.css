@@ -1,0 +1,19 @@
+PollStyle Name {
+	bgColor : LavenderBlush
+	borderType : RoundedBox
+}
+
+SingleQuestionStyle SQS {
+	bgColor : PaleTurquoise 
+	borderType :  Dotte
+}
+
+MultipleQuestionStyle MQS{
+	bgColor : LightGreen
+	borderType : Dotte
+}
+
+TextQuestionStyle TQ {
+	bgColor : Azure
+	borderType : Dotte
+}

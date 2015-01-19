@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cSS" nsURI="http://www.istic.fr/m2miage/idm/CSS" nsPrefix="cSS">
+  <eClassifiers xsi:type="ecore:EClass" name="Style">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pollStyle" eType="#//PollStyle"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="singleQuestionStyle" eType="#//SingleQuestionStyle"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="multipleQuestionStyle"
+        eType="#//MultipleQuestionStyle" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textQuestionStyle" eType="#//TextQuestionStyle"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PollStyle">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//ColorEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="borderType" eType="#//BorderTypeEnum"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SingleQuestionStyle">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//ColorEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="borderType" eType="#//BorderTypeEnum"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MultipleQuestionStyle">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//ColorEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="borderType" eType="#//BorderTypeEnum"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextQuestionStyle">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//ColorEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="borderType" eType="#//BorderTypeEnum"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ColorEnum">
+    <eLiterals name="Azure" literal="Azure"/>
+    <eLiterals name="Cyan" value="1" literal="Cyan"/>
+    <eLiterals name="LavenderBlush" value="2" literal="LavenderBlush"/>
+    <eLiterals name="LightGreen" value="3" literal="LightGreen"/>
+    <eLiterals name="PaleTurquoise" value="4" literal="PaleTurquoise"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BorderTypeEnum">
+    <eLiterals name="BOX" literal="Box"/>
+    <eLiterals name="NONE" value="1" literal="None"/>
+    <eLiterals name="ROUNDEDBOX" value="2" literal="RoundedBox"/>
+    <eLiterals name="Dotte" value="3" literal="Dotte"/>
+  </eClassifiers>
+</ecore:EPackage>
